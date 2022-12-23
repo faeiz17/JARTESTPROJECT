@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilderexample.HelloController">
+   <children>
+      <ImageView fx:id="myImageView" fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bugattifirstpage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="hypcarbutton" layoutX="244.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToScene5" onMouseEntered="#change" onMouseExited="#change2" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 3; -fx-border-radius: 100;" text="SUPER-CARS">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.13377192616462708" blue="0.13377192616462708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4115853658536585">
+                     <color>
+                        <Color red="0.41424763202667236" green="0.13600000739097595" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8421052694320679" green="0.1871345043182373" blue="0.1871345043182373" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="hypcarbutton1" layoutX="476.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToscenesuv" onMouseEntered="#changesuv" onMouseExited="#change2" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 3; -fx-border-radius: 100;" text="SUVS">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.13377192616462708" blue="0.13377192616462708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4115853658536585">
+                     <color>
+                        <Color red="0.41424763202667236" green="0.13600000739097595" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8421052694320679" green="0.1871345043182373" blue="0.1871345043182373" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="hypcarbutton11" layoutX="705.0" layoutY="150.0" mnemonicParsing="false" onAction="#switchToscenesedan" onMouseEntered="#changesedan" onMouseExited="#change2" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 3; -fx-border-radius: 100;" text="SEDAN">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.13377192616462708" blue="0.13377192616462708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4115853658536585">
+                     <color>
+                        <Color red="0.41424763202667236" green="0.13600000739097595" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8421052694320679" green="0.1871345043182373" blue="0.1871345043182373" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="hypcarbutton111" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" onAction="#switchToscenecomingsoon" onMouseEntered="#changetesla" onMouseExited="#change2" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 3; -fx-border-radius: 100;" text="COMING SOON">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.13377192616462708" blue="0.13377192616462708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4115853658536585">
+                     <color>
+                        <Color red="0.41424763202667236" green="0.13600000739097595" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8421052694320679" green="0.1871345043182373" blue="0.1871345043182373" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="hypcarbutton112" layoutX="500.0" layoutY="555.0" mnemonicParsing="false" onAction="#switchTosceneaboutus" onMouseEntered="#changeabtus" onMouseExited="#change2" prefHeight="32.0" prefWidth="199.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-width: 3; -fx-border-radius: 100;" text="ABOUT US">
+         <font>
+            <Font name="Century Gothic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.13377192616462708" blue="0.13377192616462708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4115853658536585">
+                     <color>
+                        <Color red="0.41424763202667236" green="0.13600000739097595" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8421052694320679" green="0.1871345043182373" blue="0.1871345043182373" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilderexample.HelloController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buggattiloading.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="60.0" layoutY="46.0" mnemonicParsing="false" onAction="#switchToScene2" style="-fx-background-color: TRANSPARENT;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="379.0" layoutY="488.0" mnemonicParsing="false" onAction="#switchToScene4" style="-fx-background-color: transparent;" text="You are now logged in, CLICK HERE to get started">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5263158082962036" green="0.09990253299474716" blue="0.09990253299474716" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.46646341463414637">
+                     <color>
+                        <Color red="0.041423000395298004" green="0.12675438821315765" blue="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9210526347160339" green="0.008528265170753002" blue="0.008528265170753002" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <ProgressBar layoutX="272.0" layoutY="441.0" prefHeight="12.0" prefWidth="654.0">
+         <effect>
+            <ColorAdjust brightness="-0.42" contrast="-0.11" hue="-1.0" saturation="-0.42" />
+         </effect>
+      </ProgressBar>
+   </children>
+</AnchorPane>

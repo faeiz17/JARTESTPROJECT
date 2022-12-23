@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilderexample.HelloController">
+   <children>
+      <ScrollPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: black;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4000.0" prefWidth="1200.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView fitHeight="4000.0" fitWidth="1200.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@buggattidetail(2).png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1059.0" layoutY="35.0" mnemonicParsing="false" onAction="#switchToScene5" style="-fx-background-color: transparent;" text="BACK">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8157894611358643" green="0.04532163590192795" blue="0.04532163590192795" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.4878048780487805">
+                                 <color>
+                                    <Color red="0.22263428568840027" green="0.04859999939799309" blue="0.8100000023841858" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.05884502828121185" blue="0.05884502828121185" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button alignment="BOTTOM_CENTER" layoutX="520.0" layoutY="3950.0" minWidth="100.0" mnemonicParsing="false" onAction="#switchToscenebookings" style="-fx-background-color: transparent; -fx-border-color: black;" text="BOOK HERE" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

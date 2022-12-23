@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scenebuilderexample.HelloController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bugattifirstpage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="205.0" fitWidth="209.0" layoutX="54.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logoooo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="signusername" layoutX="511.0" layoutY="378.0" minHeight="25.0" minWidth="200.0" promptText="Name">
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="signemail" layoutX="511.0" layoutY="409.0" minHeight="25.0" minWidth="200.0" promptText="Email">
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="signpassword" layoutX="511.0" layoutY="441.0" minHeight="25.0" minWidth="200.0" promptText="password">
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="signcnfrmpassword" layoutX="511.0" layoutY="472.0" minHeight="25.0" minWidth="200.0" promptText="confirm password">
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></PasswordField>
+      <Button layoutX="654.0" layoutY="540.0" mnemonicParsing="false" onAction="#signup" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="14.0" />
+         </font></Button>
+      <Button layoutX="512.0" layoutY="607.0" mnemonicParsing="false" onAction="#switchToScene2" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" text="BACK TO LOGIN">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5379146919431279" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.021929824724793434" blue="0.021929824724793434" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.47256097560975613">
+                     <color>
+                        <Color red="0.16714094579219818" green="0.028200000524520874" blue="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9078947305679321" green="0.021016081795096397" blue="0.021016081795096397" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="forgetpf" layoutX="511.0" layoutY="506.0" minHeight="25.0" minWidth="200.0" promptText="restoration keyword ">
+         <padding>
+            <Insets bottom="2.0" left="2.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="choiceBox2" layoutX="102.0" layoutY="506.0" onMouseEntered="#initialize3" prefHeight="29.0" prefWidth="394.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2;">
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ChoiceBox>
+      <Label layoutX="114.0" layoutY="460.0" text="Questions">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.021929824724793434" blue="0.021929824724793434" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.47256097560975613">
+                     <color>
+                        <Color red="0.16714094579219818" green="0.028200000524520874" blue="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9078947305679321" green="0.021016081795096397" blue="0.021016081795096397" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
